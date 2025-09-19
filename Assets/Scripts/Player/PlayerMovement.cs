@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float groundDrag;
 
-    [Header("Jumping")] 
+    [Header("Jumping")]
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
