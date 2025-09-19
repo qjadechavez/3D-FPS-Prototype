@@ -1555,8 +1555,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1415047128 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
-  m_PrefabInstance: {fileID: 3019120652292629100}
+  m_CorrespondingSourceObject: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
+  m_PrefabInstance: {fileID: 3435774631760055255}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1469323202
 GameObject:
@@ -2155,7 +2155,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090765380}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &3019120652292629100
+--- !u!1001 &3435774631760055255
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2163,55 +2163,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 213571353}
     m_Modifications:
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 4934083662496354944, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
+      propertyPath: m_Name
+      value: Crystal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.714622
       objectReference: {fileID: 0}
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.3407481
       objectReference: {fileID: 0}
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalPosition.z
       value: -5.7443986
       objectReference: {fileID: 0}
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070913910260964934, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+    - target: {fileID: 5706819796265797690, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5554154371299755260, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
-      propertyPath: m_Name
-      value: Crystal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 78c5b3f6ade9a214b84cdca86eec7caa, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 558019d59ee4169a8b4a0651994a80c5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

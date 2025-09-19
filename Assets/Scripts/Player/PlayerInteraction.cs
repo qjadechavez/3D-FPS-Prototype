@@ -14,7 +14,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractable.Interact();
         }
-
     }
 
     void CheckInteraction()
