@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4120627079197041033
+--- !u!1001 &8404446583938912504
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,27 +10,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3977
+      value: 1.5657
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.3977
+      value: 1.5657
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3977
+      value: 1.5657
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.278
+      value: -5.9050665
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.418
+      value: 1.577704
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.191
+      value: -1.200697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -60,9 +60,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fb1e3b7b5b9a170b9b790d8c9aac601c, type: 2}
     - target: {fileID: 919132149155446097, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       propertyPath: m_Name
-      value: Crystal 2
+      value: Crystal#1 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       propertyPath: m_TagString
@@ -74,42 +78,62 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7869533844496448790}
+      addedObject: {fileID: 3692841578039186900}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8231765475611512933}
+      addedObject: {fileID: 4286144717718461267}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4924189988483735141}
+      addedObject: {fileID: 2605372693479779021}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7234152211958816458}
+      addedObject: {fileID: 7913306031825763270}
   m_SourcePrefab: {fileID: 100100000, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
---- !u!1 &3886045379588267224 stripped
+--- !u!1 &8675057074257898921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
-  m_PrefabInstance: {fileID: 4120627079197041033}
+  m_PrefabInstance: {fileID: 8404446583938912504}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7869533844496448790
+--- !u!114 &3692841578039186900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3886045379588267224}
+  m_GameObject: {fileID: 8675057074257898921}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2cd97d1d7610f1949b3c503266d7f949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
---- !u!64 &8231765475611512933
+  rotationSpeed: 10
+  floatAmplitude: 0.2
+  floatFrequency: 1
+--- !u!114 &4286144717718461267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8675057074257898921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!64 &2605372693479779021
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3886045379588267224}
+  m_GameObject: {fileID: 8675057074257898921}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -125,23 +149,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8305336767688184793, guid: 0a798bb4e54027d46b69302fde62a7a2, type: 3}
---- !u!114 &4924189988483735141
+--- !u!114 &7913306031825763270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3886045379588267224}
+  m_GameObject: {fileID: 8675057074257898921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33cdfd137207c77d9a1075522c9d27d6, type: 3}
+  m_Script: {fileID: 11500000, guid: bc61062358efd9f89bdac7dfe1427548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Pickup Crystal
+  message: 
   onInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3886045379588267224}
+      - m_Target: {fileID: 8675057074257898921}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -153,21 +177,5 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7234152211958816458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3886045379588267224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
+  collectibleID: 0
+  collectibleValue: 0
