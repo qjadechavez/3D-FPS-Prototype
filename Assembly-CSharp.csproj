@@ -48,18 +48,15 @@
     <Analyzer Include="/home/jhonarol/Unity/Hub/Editor/6000.0.57f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/Managers/ObjectiveManager.cs" />
     <Compile Include="Assets/Scripts/UI/CollectiblesUI.cs" />
     <Compile Include="Assets/Scripts/Player/PlayerInteraction.cs" />
     <Compile Include="Assets/Scripts/Interactables/CollectibleInteractable.cs" />
     <Compile Include="Assets/Scripts/Camera/MoveCamera.cs" />
     <Compile Include="Assets/QuickOutline/Scripts/Outline.cs" />
-    <Compile Include="Assets/Scripts/Managers/GameManager.cs" />
     <Compile Include="Assets/Aztech Games/GemsAndCrystals/Script/FloatRotation.cs" />
     <Compile Include="Assets/Scripts/Managers/CollectiblesManager.cs" />
     <Compile Include="Assets/Scripts/Player/PlayerMovement.cs" />
-    <Compile Include="Assets/Scripts/Camera/HUDController.cs" />
-    <Compile Include="Assets/Scripts/Interactables/ButtonInteractable.cs" />
+    <Compile Include="Assets/Scripts/Controllers/HUDController.cs" />
     <Compile Include="Assets/Scripts/Camera/PlayerCamera.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Scripts/Animation/Collectibles/FloatRotation.cs" />
