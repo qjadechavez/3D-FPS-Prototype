@@ -27,3 +27,7 @@ sysinfo.txt
 # Ignore memory captures and recordings
 [Mm]emoryCaptures/
 [Rr]ecordings/
+/Library/
+/Temp/
+/Logs/
+*.tmp
