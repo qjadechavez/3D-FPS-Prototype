@@ -6,6 +6,8 @@ TagManager:
   tags:
   - TowerObstacle
   - Interactable
+  - CollectibleInteractable
+  - SwitchableInteractable
   layers:
   - Default
   - TransparentFX
