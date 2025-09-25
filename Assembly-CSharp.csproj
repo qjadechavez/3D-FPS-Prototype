@@ -61,6 +61,7 @@
     <Compile Include="Assets/Scripts/Controllers/HUDController.cs" />
     <Compile Include="Assets/Scripts/Camera/PlayerCamera.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
+    <Compile Include="Assets/Scripts/Animation/Obstacles/GlobeRotation.cs" />
     <Compile Include="Assets/Scripts/Managers/SwitchManager.cs" />
     <Compile Include="Assets/Scripts/Animation/Collectibles/FloatRotation.cs" />
     <Compile Include="Assets/Scripts/Interface/Interactable.cs" />
