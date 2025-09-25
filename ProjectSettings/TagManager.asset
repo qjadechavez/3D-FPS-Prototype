@@ -4,10 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - TowerObstacle
-  - Interactable
   - CollectibleInteractable
   - SwitchableInteractable
+  - Obstacles
+  - Passages
+  - Managers
+  - Controllers
   layers:
   - Default
   - TransparentFX

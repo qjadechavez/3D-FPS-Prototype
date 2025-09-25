@@ -14,10 +14,10 @@ public class CubeBarrierController : MonoBehaviour
             SwitchManager.instance.onSwitchToggled.AddListener(OnSwitchToggled);
         }
         
-        // Make sure gate starts visible
+        // Make sure gate starts HIDDEN
         if (cubeGate != null)
         {
-            cubeGate.SetActive(true);
+            cubeGate.SetActive(false); // Start hidden instead of visible
         }
     }
     
@@ -26,12 +26,12 @@ public class CubeBarrierController : MonoBehaviour
         // Check if this is the switch we care about
         if (switchID == requiredSwitchID && cubeGate != null)
         {
-            // Toggle cube visibility based on switch state
-            // When switch is activated, hide the cube (gate opens)
-            // When switch is deactivated, show the cube (gate closes)
-            cubeGate.SetActive(!isActivated);
+            // Show cube when switch is activated, hide when deactivated
+            // When switch is activated, show the cube (gate closes/blocks)
+            // When switch is deactivated, hide the cube (gate opens/allows passage)
+            cubeGate.SetActive(isActivated);
             
-            Debug.Log($"Cube gate {(isActivated ? "opened (invisible)" : "closed (visible)")}");
+            Debug.Log($"Cube gate {(isActivated ? "closed (visible/blocking)" : "opened (invisible/passage clear)")}");
         }
     }
     
