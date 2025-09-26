@@ -10,6 +10,7 @@ TagManager:
   - Passages
   - Managers
   - Controllers
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - 
   - 
   - whatIsGround
-  - 
+  - whatIsPlayer
   - 
   - 
   - 
