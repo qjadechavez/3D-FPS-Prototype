@@ -11,6 +11,7 @@ TagManager:
   - Managers
   - Controllers
   - Interactable
+  - Enemy
   layers:
   - Default
   - TransparentFX

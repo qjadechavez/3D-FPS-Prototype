@@ -3,8 +3,9 @@ using UnityEngine;
 public class CubeBarrierController : MonoBehaviour
 {
     [Header("Gate Settings")]
-    public GameObject cubeGate; // The cube that acts as the gate
-    public string requiredSwitchID = "Switch"; // Which switch controls this gate
+    // Reference to the cube gate GameObject (Passages)
+    public GameObject cubeGate; 
+    public string[] requiredSwitchIDs = {"Switch", "Switch1", "Switch2", "Switch3"};
     
     void Start()
     {
@@ -14,24 +15,35 @@ public class CubeBarrierController : MonoBehaviour
             SwitchManager.instance.onSwitchToggled.AddListener(OnSwitchToggled);
         }
         
-        // Make sure gate starts HIDDEN
+        // Set initial state of the passage to inactive (hidden)
         if (cubeGate != null)
         {
-            cubeGate.SetActive(false); // Start hidden instead of visible
+            cubeGate.SetActive(false);
         }
     }
     
     void OnSwitchToggled(string switchID, bool isActivated)
     {
-        // Check if this is the switch we care about
-        if (switchID == requiredSwitchID && cubeGate != null)
+        // Check if the toggled switch is one of the relevant switches
+        bool isRelevantSwitch = false;
+        foreach (string requiredID in requiredSwitchIDs)
         {
-            // Show cube when switch is activated, hide when deactivated
-            // When switch is activated, show the cube (gate closes/blocks)
-            // When switch is deactivated, hide the cube (gate opens/allows passage)
-            cubeGate.SetActive(isActivated);
-            
-            Debug.Log($"Cube gate {(isActivated ? "closed (visible/blocking)" : "opened (invisible/passage clear)")}");
+            if (switchID == requiredID)
+            {
+                isRelevantSwitch = true;
+                break;
+            }
+        }
+        
+        // If it's a relevant switch, check the states of all required switches
+        if (isRelevantSwitch && cubeGate != null)
+        {
+            bool allSwitchesActivated = SwitchManager.instance.AllSwitchesActivated(requiredSwitchIDs);
+
+            // Set the cube gate active if all required switches are activated
+            cubeGate.SetActive(allSwitchesActivated);
+
+            Debug.Log($"Switches status: {SwitchManager.instance.GetActivatedCount(requiredSwitchIDs)}/{requiredSwitchIDs.Length} activated. Stairs {(allSwitchesActivated ? "VISIBLE" : "INVISIBLE")}");
         }
     }
     
