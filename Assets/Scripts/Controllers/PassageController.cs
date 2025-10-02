@@ -7,6 +7,9 @@ public class CubeBarrierController : MonoBehaviour
     public GameObject cubeGate; 
     public string[] requiredSwitchIDs = {"Switch", "Switch1", "Switch2", "Switch3"};
     
+    [Header("Passage Info")]
+    public string passageName = "Main Passage"; // For debugging
+    
     void Start()
     {
         // Subscribe to switch events from SwitchManager
@@ -43,7 +46,7 @@ public class CubeBarrierController : MonoBehaviour
             // Set the cube gate active if all required switches are activated
             cubeGate.SetActive(allSwitchesActivated);
 
-            Debug.Log($"Switches status: {SwitchManager.instance.GetActivatedCount(requiredSwitchIDs)}/{requiredSwitchIDs.Length} activated. Stairs {(allSwitchesActivated ? "VISIBLE" : "INVISIBLE")}");
+            Debug.Log($"{passageName} - Switches status: {SwitchManager.instance.GetActivatedCount(requiredSwitchIDs)}/{requiredSwitchIDs.Length} activated. Passage {(allSwitchesActivated ? "OPENED" : "BLOCKED")}");
         }
     }
     
