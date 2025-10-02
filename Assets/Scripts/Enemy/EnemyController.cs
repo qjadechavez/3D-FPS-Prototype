@@ -22,6 +22,7 @@ public class EnemyController : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    // Start is called before the first frame update
     private void Awake()
     {
         player = GameObject.Find("PlayerObject").transform;
@@ -30,7 +31,7 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        // Check for sight and attack range
+        // Check for sight and attack range 
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
